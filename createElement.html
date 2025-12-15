@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+    <body>
+          <h1>Add list to items</h1>
+            <input type="text" id="item" placeholder="Enter item name">
+            <!-- create a button -->
+               <button onclick="addItem()">Add items</button>
+
+               <button onclick="RemoveItem()">Remove items</button>
+                  <ul id="list"> </ul>
+
+                  <script>
+                    //    add new items to function
+                      function addItem()
+                      {
+                        let input= document.getElementById("item");
+                        let ul= document.getElementById("list");
+
+                        let li= document.createElement("li");
+                        li.innerText= input.value;
+
+                        ul.appendChild(li);
+
+                        input.value= ""; //clear input
+                      }
+                    //   remove items from function
+                       function RemoveItem()
+                       {
+                         let ul= document.getElementById("list");
+                          
+                           if(ul.lastChild)
+                           {
+                             ul.removeChild(ul.lastChild);
+                           }
+                       }
+
+                  </script>
+            
+      
+       </script>
+</body>
+</html>

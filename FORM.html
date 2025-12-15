@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Registration form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+      <h1>Registration Form</h1>
+       <form>
+        <i class="fa-solid fa-user"></i>
+        <label for="name">First name:</label>
+          <input type="text" placeholder="Enter Your name" required> <br><br>
+
+           <label for="Lname">Last name:</label>
+          <input type="text" placeholder="Enter Your Last Name"> <br><br>
+            <i class="fa-solid fa-key"></i>
+          <label for="password">Enter Your Password:</label>
+          <input type="password" placeholder="Enter your password"> <br><br>
+
+          <label for="Email">Enter your email</label>
+          <input type="email" placeholder="Enter your email">
+
+          <!-- check box is used for multiple elements -->
+             <h3>Enter any three subjects:</h3>
+              <input type="checkbox"> HTML
+               <input type="checkbox"> CSS
+                <input type="checkbox"> JS
+
+                <!-- RADIO BUTTONS IF WE WANT TO SELECT ONLY ELEMENT -->
+                 
+            <h3>SELECT YOUR GENDER</h3>
+              <input type="radio" name="gender">MALE
+              <input type="radio" name="gender">FEMALE
+              <input type="radio" name="gender">UNKNOWN <br><br>
+
+              <!-- if we want select multple options  -->
+                 <label for="cars">chose a car:</label>
+               <select name="car" size="3">
+                    
+                      <option value="toyota">corolla</option>
+                      <option value="toyota">yaris</option>
+                      <option value="toyota">camry</option>
+
+                      <option value="toyota">corolla</option>
+                      <option value="toyota">yaris</option>
+                      <option value="toyota">camry</option>
+
+               </select>
+
+                 <input list="abc">
+                    <datalist id="abc">
+                            <option value="toyota"></option>
+                        <option value="yo"></option>
+                         <option value="honda"></option>
+                    </datalist> <br><br>
+
+                    <!-- add text area -->
+                      <h1>ADDD TEXT AREA:</h1>
+                     <textarea name="" id="" rows="5" cols="5">
+                     </textarea> <br><br>
+
+                     <!-- button submit/reset -->
+                       <input type="submit"> <input type="reset">
+
+                       <input type="file">
+                </form>
+
+                &COPY;
+    
+</body>
+</html>
